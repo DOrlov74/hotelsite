@@ -1,8 +1,7 @@
-import 'normalize.css';
+import 'reset-css';
+//import './scss/variables.scss';
 import './scss/index.scss';
-/* import img3 from './img/image 3.png';
+import Heading from './js/header.js';
 
-let ContentImg=document.getElementsByClassName('content__image');
-ContentImg.src=img3;
-console.log(img3);
-console.log(ContentImg); */
+const heading=new Heading();
+heading.render();

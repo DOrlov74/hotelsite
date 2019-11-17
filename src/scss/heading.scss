@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+.header {
+    height: 70px;
+    font-family: $font-family;
+    font-size: $font-size;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    content: url(./../img/Logo.svg);
+    margin-left: 8.3%;
+    margin-right: 6px;
+}
+
+.header__logo__text {
+    content: url('./../img/TOXIN.svg');
+}
+
+.header__menu {
+    margin-left: auto;
+    display: flex;
+    justify-content: end;
+}

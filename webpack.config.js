@@ -19,7 +19,11 @@ module.exports={
     module: {
         rules: [
             {
-                test: /\.(png|jpg)$/,
+                test: /\.(woff2?|ttf)$/,
+                use: ['file-loader']
+            },
+            {
+                test: /\.(png|jpg|svg)$/,
                 use: ['file-loader']
             },
             {
@@ -29,6 +33,16 @@ module.exports={
             {
                 test: /\.scss$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
             }
         ]
     },
