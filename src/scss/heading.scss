@@ -6,11 +6,12 @@
     font-size: $font-size;
     display: flex;
     align-items: center;
+    margin: 0 8.3%;
 }
 
 .header__logo {
     content: url(./../img/Logo.svg);
-    margin-left: 8.3%;
+    //margin-left: 8.3%;
     margin-right: 6px;
 }
 
@@ -22,4 +23,39 @@
     margin-left: auto;
     display: flex;
     justify-content: end;
+    align-items: center;
+    color: $menu-text-color;
+}
+
+.header__menu > div{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header__menu__button {
+    content: url('./../img/keyboard_arrow_down-24px.svg');
+    display: inline-block;
+}
+
+.header__login, .header__signin{
+    display: inline-block;
+    font-family: $button-font-family;
+    padding: 8px 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: $button-color;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.header__login{
+    color: $button-color;
+   
+    background-color: #fff;
+}
+
+.header__signin{
+    color: #fff;
+    background-color: $button-color;
 }
